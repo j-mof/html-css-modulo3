@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+body{
+    background-image: url('imagens/pattern002.png');
+    background-size: 100px 100px; /*tamanho da imagem de fundo (se não colocar, será carregada a 
+    imagem padrão. Ocorrerá a repetição automática.*/
+    /*Para controlar a repetição automatica, usar:*/
+    background-repeat: no-repeat; /*mostrará somente uma vez a imagem*/
+    /*pode-se usar o repeat-x (repetição horizontal) e repeat-y(repetição vertical). Sempre partirá
+    do canto superior esquerdo (possível alterar isso também!)*/
+
+
+}
+
+
+
+
