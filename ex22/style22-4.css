@@ -8,6 +8,7 @@ body{
     background-position: center top; /*posição da imagem*/
     background-repeat: no-repeat; /*não repetir a imagem*/
     /*background-size: 100% 100%; tamanho se adaptará e ocupará 100% de altura e largura. Não é muito bom*/
+    background-attachment: fixed; /*fixará a imagem no fundo da página*/
     background-size: cover /*contain; contain: a imagem será 100% exibida (pode criar barras laterais ou horizontais.
     Já o cover, adaptará a imagem mesmo que corte algum pedaço.
     Esse comando aceita o "auto também. */
@@ -18,7 +19,7 @@ body{
 
 main{
     background-color: white;
-    width: 400px;
+    width: 400px; /*por conta de celulares. ideal seria 350px*/
     padding: 10px;
     margin: auto;
     border: 1px solid darkblue;
