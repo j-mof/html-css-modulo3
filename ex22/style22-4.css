@@ -2,24 +2,32 @@
 
 
 body{
+   /*é possível escrever um shorthand para o back ground
+   
+   Sequência: color> image> position> repeat> (size*)> attachment.
+    OBS.: ali é a posição do size (W3C), porém ele não funciona atualmente no shorthand.
+   ficaria assim:
+   
+    background: black url(imagens/wallpaper002.jpg) center center 
+    no-repeat fixed;*/
+   
+   
+   
     height: 100vh; /*altura da viewport*/
     background-color: black;
     background-image: url(imagens/wallpaper002.jpg);
     background-position: center top; /*posição da imagem*/
+   
+   
+   
+   
     background-repeat: no-repeat; /*não repetir a imagem*/
     /*background-size: 100% 100%; tamanho se adaptará e ocupará 100% de altura e largura. Não é muito bom*/
     background-attachment: fixed; /*fixará a imagem no fundo da página*/
     background-size: cover /*contain; contain: a imagem será 100% exibida (pode criar barras laterais ou horizontais.
     Já o cover, adaptará a imagem mesmo que corte algum pedaço.
     Esse comando aceita o "auto também. */
-
-    /*é possível fazer um shothand do background:
-    Sequência: color > image > position > repeat > size > attachment.*/
     
-    /*Ficaria assim:*/
-    
-
-
 
 }
 
