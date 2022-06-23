@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+
+#container{
+    position: relative; /*para alinhamento vertical*/
+    height: 95vh;
+    
+    background-color: purple;
+    padding: 10px;
+    background-image: url(imagens/target001.png);
+    background-size: 100% 100%;
+
+
+}
+
+/*Obs: position - o que está de fora é relativo (roxo).
+ Já o que esta de dentro é absoluto(amarelo)
+ Fazendo isso, é possível configurar o left*/
+
+
+
+#conteudo{
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: yellow;
+    background-image: url(imagens/target001.png);
+    background-size: 100% 100%;
+
+   
+    /*usaria margin: auto para alinhar horizontalmente o conteúdo ao centro.
+    o margin só serve para alinhamento horizontal.*/
+   
+   
+    left: 50%; /*melhor usar porcentagem*/
+    top: 50%;
+   
+    /*Para acertar o alinhamento, usar:*/
+    transform: translate(-50% , -50%); 
+    /*a caixa amarela sempre ficará no centro da caixa roxa*/
+
+
+
+
+
+}
+
