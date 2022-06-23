@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+
+div.bloco{
+    height: 200px; /*OBS: Se eu usar vh(view height= view port) ao invés de px,
+    será a altura que eu visualizo na janela*/
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    background-image: url(imagens/wallpaper002.jpg);
+
+
+}
+
+div#q1{
+    background-position: left top; /*por padrão a imagem aparecerá assim! Define o ponto de ancoragem da imagem*/
+
+}
+div#q2{
+    background-position: left center;
+
+}
+div#q3{
+    background-position: right bottom;
+
+}
+div#q4{
+    background-position: center center;
+
+}
+
+
+
+
