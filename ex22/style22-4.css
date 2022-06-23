@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+
+body{
+    height: 100vh; /*altura da viewport*/
+    background-color: black;
+    background-image: url(imagens/wallpaper002.jpg);
+    background-position: center top; /*posição da imagem*/
+    background-repeat: no-repeat; /*não repetir a imagem*/
+    /*background-size: 100% 100%; tamanho se adaptará e ocupará 100% de altura e largura. Não é muito bom*/
+    background-size: cover /*contain; contain: a imagem será 100% exibida (pode criar barras laterais ou horizontais.
+    Já o cover, adaptará a imagem mesmo que corte algum pedaço.
+    Esse comando aceita o "auto também. */
+
+
+
+}
+
+main{
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+    
+
+    
+
+}
+
+main:hover{
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.534); /*quando passar o mouse, a borda aparecerá*/
+}
+
+
