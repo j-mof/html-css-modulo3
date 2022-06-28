@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+body{
+ font-family: Arial, Helvetica, sans-serif;   
+}
+
+
+
+table{
+    width: 400px;
+    height: 400px;
+    border-collapse: collapse;
+    
+}
+
+tr{
+    background-color: lightgray;
+}
+
+td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;/*para alinhar horizontalmente o conteúdo da tabela*/
+    /*vertical-align: bottom; para alinhar verticalmente o conteúdo da tabela*/
+
+}
