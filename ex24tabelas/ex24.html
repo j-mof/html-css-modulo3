@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Tabelas grandes</title>
+</head>
+<body>
+    <h1>Anatomia de tabelas grandes</h1>
+
+    <table>
+        <!--Hierarquia de tabelas(simples):
+        -table: tabelas;
+            -tr: table row - linha de tabela (fechamento da tag é opcional);
+                th: table header - cabeçalho de tabela;
+                td: table data - dado de tabela (fechamento da tag é opcional).-->
+
+        <!--Anatomia para tabelas grandes
+        table
+            thead (cabeça da taabela):
+                Posso ter tr, td, th;
+            tbody (corpo da tabela):
+                Posso ter tr, td, th;
+            tfoot (rodapé da tabela):
+                Posso ter tr, td, th; -->
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <th class="num">000000000000000</th>
+
+            </tr>
+
+
+        </tfoot>
+
+    </table>
+
+
+
+
+
+</body>
+</html>
