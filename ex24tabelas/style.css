@@ -13,12 +13,30 @@ table{
     
 }
 
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightgray;
+
+}
+
+
 thead, th{
     background-color: gray;
     color: white;
     border: 1px solid black;
     
 }
+
+tbody tr:nth-child(2n){ /*efeito zebrado: de duas em duas colocará uma tarja cinza!!! muito interessante!
+    Posso utilizar impares e pares também (odd (2n-1) and even (2n)) !!! */
+    background-color: lightgray;
+
+
+}
+
+
 
 .num{
     text-align: right;
