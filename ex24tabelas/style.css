@@ -34,7 +34,7 @@ thead > tr > th { /*congelar o titulo da tabela (não está funcionando em todos
     */
     position: sticky;
     top: -1px; /*colar na parte 0*/
-
+/*esse comando atua em conjunto com o comando que está no table*/
 
 
 
