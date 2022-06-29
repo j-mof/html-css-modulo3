@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Mesclagem de células</title>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+
+    <table id="tabela1">
+        <!--Hierarquia de tabelas(simples):
+        -table: tabelas;
+            -tr: table row - linha de tabela (fechamento da tag é opcional);
+                th: table header - cabeçalho de tabela;
+                td: table data - dado de tabela (fechamento da tag é opcional).-->
+
+        <!--Anatomia para tabelas grandes
+        table
+            caption: legenda da tabela (não pode colocar tr ou td...    );
+            scope="row" - Muito útil!!!!! Serve para os mecanismos de buscas analisarem os dados!!!!!!
+            Colocar sempre!!!!
+
+            thead (cabeça da taabela):
+                Posso ter tr, td, th;
+            tbody (corpo da tabela):
+                Posso ter tr, td, th;
+            tfoot (rodapé da tabela):
+                Posso ter tr, td, th; 
+            
+            Para facilitar a leitura, usar o efeito zebrado.
+            -->
+        
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td> <!--comando para expansão de colunas (colspan="numero de colunas")-->
+                
+            </tr>
+            <tr>
+                <td rowspan="3">D</td> <!--Comando para expansão de linhas (rowspan="num. de linhas")-->
+                <td>E</td>
+                <td rowspan="2" >F</td> 
+            </tr>
+            <tr>
+                
+                <td>H</td>
+                
+            </tr>
+            <tr>
+                
+                <td colspan="2">K</td>
+                
+            </tr>
+
+
+
+
+
+        
+    </table>
+    <br>
+    <table id="tabela2">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+<br>
+    <table id="tabela3">
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+
+        </tr>
+
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+
+        </tr>
+
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+
+
+
+    </table>
+
+
+</body>
+</html>
