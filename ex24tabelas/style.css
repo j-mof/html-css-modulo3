@@ -10,6 +10,7 @@ table{
     width: 500px;
     
     border-collapse: collapse;
+    position: relative; /*para congelar o título da tabela*/
     
 }
 
@@ -27,6 +28,16 @@ thead, th{
     color: white;
     border: 1px solid black;
     
+}
+
+thead > tr > th { /*congelar o titulo da tabela (não está funcionando em todos os navegadores atualmente)
+    */
+    position: sticky;
+    top: -1px; /*colar na parte 0*/
+
+
+
+
 }
 
 tbody tr:nth-child(2n){ /*efeito zebrado: de duas em duas colocará uma tarja cinza!!! muito interessante!
