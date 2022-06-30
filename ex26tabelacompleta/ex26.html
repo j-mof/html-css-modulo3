@@ -11,90 +11,113 @@
 <body>
     <h1>Exercício de tabelas</h1>
 
-    <table id="tabela1">
-        <!--Hierarquia de tabelas(simples):
-        -table: tabelas;
-            -tr: table row - linha de tabela (fechamento da tag é opcional);
-                th: table header - cabeçalho de tabela;
-                td: table data - dado de tabela (fechamento da tag é opcional).-->
-
-        <!--Anatomia para tabelas grandes
-        table
-            caption: legenda da tabela (não pode colocar tr ou td...    );
-            scope="row" - Muito útil!!!!! Serve para os mecanismos de buscas analisarem os dados!!!!!!
-            Colocar sempre!!!!
-
-            thead (cabeça da taabela):
-                Posso ter tr, td, th;
-            tbody (corpo da tabela):
-                Posso ter tr, td, th;
-            tfoot (rodapé da tabela):
-                Posso ter tr, td, th; 
-            
-            Para facilitar a leitura, usar o efeito zebrado.
-            -->
+    <div id="container"> <!--envelopar a tabela dentro de uma div para tornar a tabela responsiva!-->
+        <table id="tabela1">
+            <!--Hierarquia de tabelas(simples):
+            -table: tabelas;
+                -tr: table row - linha de tabela (fechamento da tag é opcional);
+                    th: table header - cabeçalho de tabela;
+                    td: table data - dado de tabela (fechamento da tag é opcional).-->
+            <!--Anatomia para tabelas grandes
+            table
+                caption: legenda da tabela (não pode colocar tr ou td...    );
+                scope="row" - Muito útil!!!!! Serve para os mecanismos de buscas analisarem os dados!!!!!!
+                Colocar sempre!!!!
+                thead (cabeça da taabela):
+                    Posso ter tr, td, th;
+                tbody (corpo da tabela):
+                    Posso ter tr, td, th;
+                tfoot (rodapé da tabela):
+                    Posso ter tr, td, th;
         
-        <caption>
-            Filmes Favoritos
-        </caption>
-        <thead>
-            <tr>
-                <th scope="col">Grupos</th>
-                <th scope="col">Nomes</th>
-                <th colspan="3" scope="colgroup">Filmes</th>
-
-            </tr> 
-            
-        </thead>
+                Para facilitar a leitura, usar o efeito zebrado.
+                -->
         
-        <tbody>
-            <tr>
-            <th rowspan="3" scope="rowgroup">Mulheres</th>    
-            <td>Ana Maria Santos</td>
-            <td>Alien</td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
-            </tr>
-            <tr>
-            <td>Beatriz Souza</td>
-            <td>Hulk</td>
-            <td>Inception</td>
-            <td>Batman</td>
-            </tr>
-            <tr>
-            <td>Cláudia Melo</td>
-            <td>Oblivion</td>
-            <td>Matrix</td>
-            <td>Big Hero</td>
-            </tr>
-            
-            
-            <tr>
-            <th rowspan="3" scope="rowgroup">Homens</th>
-            <td>Bruno Mendonça</td>
-            <td>Intocáveis</td>
-            <td>Amnésia</td>
-            <td>Gladiador</td>
-            </tr>
-            <tr>
-            <td>Daniel Lourenço</td>
-            <td>Wall-e</td>
-            <td>Oldboy</td>
-            <td>Dangal</td>
-            </tr>
-            <tr>
-            <td>Fabiano Mota</td>
-            <td>Star wars</td>
-            <td>Taxi Driver</td>
-            <td>Toy Story</td>
-            </tr>
-
-
-
-        </tbody>
-
-            
-    </table>
+            <colgroup> <!--cria uma classe para as colunas e permite personaliza-las no css-->
+                <col class="col1"> <!--Também posso usar span="num de colunas", para agrupar-->
+                <col class="col2">
+                <col class="col3" span="6">
+                <!--<col class="col4">
+                <col class="col5">
+                <col class="col6">
+                <col class="col7">
+                <col class="col8"> -->
+            </colgroup>
+            <caption>
+                Filmes Favoritos
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Grupos</th>
+                    <th scope="col">Nomes</th>
+                    <th colspan="6" scope="colgroup">Filmes</th>
+                </tr>
+        
+            </thead>
+        
+            <tbody>
+                <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+                </tr>
+                <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+                </tr>
+                <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+                </tr>
+        
+        
+                <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+                </tr>
+                <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-e</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+                </tr>
+                <tr>
+                <td>Fabiano Mota</td>
+                <td>Star wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+                </tr>
+            </tbody>
+        
+        </table>
+    </div>
 
 
 </body>
